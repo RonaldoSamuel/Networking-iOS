@@ -10,6 +10,12 @@ target 'NetworkingRxSwift' do
   # MARK: - Networking
   pod 'Alamofire'
 
+  # MARK: - RXSWift
+  pod 'RxSwift'
+  pod 'RxDataSources'
+  pod 'RxSwiftExt'
+  pod 'RxGesture'
+
   target 'NetworkingRxSwiftTests' do
     inherit! :search_paths
     # Pods for testing
