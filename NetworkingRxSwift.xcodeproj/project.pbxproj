@@ -32,6 +32,7 @@
 		6288E62C275945EA0048DF43 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288E62B275945EA0048DF43 /* ViewModel.swift */; };
 		6288E62E275946140048DF43 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288E62D275946140048DF43 /* ListModel.swift */; };
 		6288E630275948330048DF43 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288E62F275948330048DF43 /* ListViewCell.swift */; };
+		62E850C32770F6BD00634715 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E850C22770F6BD00634715 /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		6288E62B275945EA0048DF43 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6288E62D275946140048DF43 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		6288E62F275948330048DF43 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		62E850C22770F6BD00634715 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				6288E620275943690048DF43 /* Constants.swift */,
+				62E850C22770F6BD00634715 /* Images.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				6288E60A275939140048DF43 /* PrincipalCoordinator.swift in Sources */,
 				6288E626275943D30048DF43 /* ListRouter.swift in Sources */,
 				6288E607275938A90048DF43 /* Coordinator.swift in Sources */,
+				62E850C32770F6BD00634715 /* Images.swift in Sources */,
 				62052CE627592C3B00433F81 /* ViewController.swift in Sources */,
 				6288E6042759386E0048DF43 /* MainCoordinator.swift in Sources */,
 				62052CE227592C3B00433F81 /* AppDelegate.swift in Sources */,

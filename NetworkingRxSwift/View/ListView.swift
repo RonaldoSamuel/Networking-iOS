@@ -17,7 +17,7 @@ class ListView: UIView {
         return lbl
     }()
     
-    var tableLista: UITableView = {
+    var tableList: UITableView = {
         var table = UITableView()
         table.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         table.backgroundColor = .white
@@ -40,7 +40,6 @@ class ListView: UIView {
         
     }
 
-    
     func createSubviews() {
         
         backgroundColor = .white
@@ -55,12 +54,12 @@ class ListView: UIView {
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         
-        addSubview(tableLista)
+        addSubview(tableList)
         NSLayoutConstraint.activate([
-            tableLista.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 15),
-            tableLista.bottomAnchor.constraint(equalTo: bottomAnchor),
-            tableLista.leadingAnchor.constraint(equalTo: leadingAnchor),
-            tableLista.trailingAnchor.constraint(equalTo: trailingAnchor)
+            tableList.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 15),
+            tableList.bottomAnchor.constraint(equalTo: bottomAnchor),
+            tableList.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableList.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     

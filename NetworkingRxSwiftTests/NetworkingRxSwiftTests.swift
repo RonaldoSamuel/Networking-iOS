@@ -7,20 +7,13 @@
 
 import XCTest
 @testable import NetworkingRxSwift
-
+ 
 class NetworkingRxSwiftTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    var listModel: ListModelElement?
+    
+    func testIfdataIsfillingUpCorrectilly() {
+        listModel = ListModelElement(name: "Test", categoryId: "Test")
+        XCTAssertTrue(listModel?.name != nil && listModel?.categoryId != nil)
     }
 
     func testPerformanceExample() throws {

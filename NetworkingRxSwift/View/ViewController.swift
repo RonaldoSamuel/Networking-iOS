@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var expandedIndexPath: NSIndexPath?
+    
     var coordinator: PrincipalCoordinator?
     var presentationView = ListView()
     var viewModel = ViewModel()
@@ -29,7 +31,7 @@ class ViewController: UIViewController {
         viewModel.dataSouce
             .bind(
                 to: presentationView
-                    .tableLista
+                    .tableList
                     .rx
                     .items(
                         cellIdentifier: ListViewCell.identifier,
@@ -40,7 +42,14 @@ class ViewController: UIViewController {
                 
                 cell.configCell(data)
             }.disposed(by: disposable)
+        
+        self.presentationView.tableList.rx.itemSelected
+          .subscribe(onNext: { [weak self] indexPath in
+              let cell = self?.presentationView.tableList.cellForRow(at: indexPath) as? ListViewCell
+              self?.presentationView.tableList.beginUpdates()
+              cell?.userClickEffect()
+              self?.presentationView.tableList.endUpdates()
+          }).disposed(by: disposable)
     }
 
 }
-

@@ -16,10 +16,16 @@ struct ListModelElement {
         self.name = codable.name
     }
     
+    init(name: String, categoryId: String) {
+        self.categoryId = categoryId
+        self.name = name
+    }
+    
     init() {
         self.categoryId = ""
         self.name = ""
     }
+    
 }
 
 typealias ListModel = [ListModelElement]
